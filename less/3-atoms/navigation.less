@@ -195,17 +195,21 @@
 			a{
 				background-color: @colorB4;
 				color: @colorW;
-				font-size: .914em;
-
-				span{
-					background: url('../img/link.png') no-repeat right center;
-					padding-right: 20px;
-				}
+				font-size: .914em;				
 			}
 
 			a:hover{
 				background-color: @colorB5;
 			}	
+
+			span:after{
+				background: url('../img/link.png') no-repeat right center;
+				content: "";
+				width: 12px;
+				height: 9px;
+				display: inline-block;
+				margin-left: 5px;
+			}
 		}	
 
 		.nav--social{
@@ -213,6 +217,8 @@
 			li{
 				float: left;
 				margin-left: 25px;
+				border: none;
+				width: auto;
 
 				&:first-child{
 					margin-left: 0;
