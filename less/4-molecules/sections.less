@@ -1,0 +1,167 @@
+//SECTIONS
+//=====================
+
+.section{	
+
+	.bg-section{
+		padding-top: 314px;
+		padding-bottom: 20px;
+	}
+
+	header{
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		h2{
+			font: normal 0.857em @font-default, @font-default-system, @font-third;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+		}
+
+		li{
+			font: normal 0.714em/1.2em @font-default, @font-default-system, @font-third;
+			text-transform: uppercase;
+			margin-top: 30px;
+
+			&:first-child{
+				margin-top: 0;
+			}
+
+			a:hover{
+				color: @colorW;
+			}
+		}
+	}
+}
+
+// Who section
+.section--who{
+
+	.bg-section{
+		background: url(../img/fondo_who_01.jpg) no-repeat center 0;	
+		background-size: cover;
+	}	
+
+	.box{		
+		background-color: @colorB;
+		position: relative;
+
+		h2{
+			color: @colorB1;
+			position: relative;			
+		}
+
+		li{
+			a{
+				color: @colorB2;
+			}
+		}
+
+		&:before{
+			.shape-arrow-top (@radius: 5px, @color: @colorB, @x: 20px, @y: -5px);		
+		}		
+	}
+
+	.text-intro{
+		color: @colorB;
+	}
+}
+
+// What section
+.section--what{
+
+	.bg-section{
+		background: url(../img/fondo_what_01.jpg) no-repeat center 0;	
+		background-size: cover;
+	}	
+
+	.box{		
+		background-color: @colorO;
+		position: relative;
+
+		h2{
+			color: @colorO1;
+			position: relative;			
+		}
+
+		li{
+			a{
+				color: @colorO2;
+			}
+		}
+
+		&:before{
+			.shape-arrow-top (@radius: 5px, @color: @colorO, @x: 20px, @y: -5px);		
+		}		
+	}
+
+	.text-intro{
+		color: @colorO;
+	}
+}
+
+// How section
+.section--how{
+
+	.bg-section{
+		background: url(../img/fondo_how_01.jpg) no-repeat center 0;	
+		background-size: cover;
+	}	
+
+	.box{		
+		background-color: @colorG;
+		position: relative;
+
+		h2{
+			color: @colorG1;
+			position: relative;			
+		}
+
+		li{
+			a{
+				color: @colorG2;
+			}
+		}
+
+		&:before{
+			.shape-arrow-top (@radius: 5px, @color: @colorG, @x: 20px, @y: -5px);		
+		}		
+	}
+
+	.text-intro{
+		color: @colorG;
+	}
+}
+
+// Where section
+.section--where{
+
+	.bg-section{
+		background: url(../img/fondo_where_01.jpg) no-repeat center 0;	
+		background-size: cover;
+	}	
+
+	.box{		
+		background-color: @colorY;
+		position: relative;
+
+		h2{
+			color: @colorY1;
+			position: relative;			
+		}
+
+		li{
+			a{
+				color: @colorY2;
+			}
+		}
+
+		&:before{
+			.shape-arrow-top (@radius: 5px, @color: @colorY, @x: 20px, @y: -5px);		
+		}		
+	}
+
+	.text-intro{
+		color: @colorY;
+	}
+}
