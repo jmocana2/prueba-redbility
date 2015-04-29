@@ -3,10 +3,6 @@
 
 @media screen and (min-width: 645px){
 
-	.mobile{
-		display: none;
-	}
-
 	#header{
 
 		overflow: visible;
@@ -69,6 +65,19 @@
 		float: left;
 		width: 20%;
 		position: static;
+
+		.box{
+			a{
+				vertical-align: middle;
+				height: 76px;
+				line-height: 63px !important;
+				text-align: center;
+			}
+
+			span{
+				display: inline-block;				
+			}
+		}
 
 		&.section--info{
 			width: 10%;
@@ -164,5 +173,55 @@
 			}
 
 		}		
+	}
+
+	main{
+		.section{
+			.box{
+				background-color: transparent;
+			}
+
+			.bg-section{
+				height: 100vh;
+				padding: 0;
+			}
+
+			.text-intro{
+				color: @colorW;
+			}
+		}
+
+		.box{			
+			display: none;		
+		}
+
+		.section--who{
+			.swiper-pagination-bullet{
+				border-bottom: 2px @colorB1 solid;
+			}
+		}
+	}
+
+	.text-intro{
+		font: normal 2.25em/1.1em @font-italic, @font-third;
+		max-width: 565px;
+		position: absolute;
+		left: 50%;
+		margin-left: -282px;
+		bottom: 144px;
+		text-align: center;
+		padding: 0;
+
+		&.bg-white-trans{
+			background-color: transparent;
+		}
+	}
+
+	.swiper-button-prev, .swiper-button-next{
+		display: none;
+	}
+
+	#footer{
+		display: none;
 	}
 }
