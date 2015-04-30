@@ -1,7 +1,11 @@
-//devices <= 480px
+//devices <= 645px
 //=======================
 
 @media screen and (min-width: 645px){
+
+	.hidden-xsr{
+		display: block;
+	}
 
 	#header{
 
@@ -23,6 +27,10 @@
 		display: block;
 	}
 
+	.dropdown{
+		position: static;
+	}
+
 	.nav--main{
 
 		overflow: visible;
@@ -37,27 +45,53 @@
 			}
 		}
 
-		.collapse, .collapsing{
-			position: absolute;
-			width: 100%;
-			top: 109px;
-			left: 0;
+		.section{
+			.dropdown.open{
+				.dropdown-menu{
+					position: absolute;
+					width: 100%;
 
-			li{
-				float: left;
-				width: 25%;			
+					li{
+						float: left;
+						width: 25%;			
 
-				a{
-					font-size: 0.85em;
-				}	
+						a{
+							font-size: 0.85em;
+							padding: 0;
+						}	
 
-				span{
-					max-width: 70px;
-					display: block;
-					line-height: 16px;
-					margin: 14px auto;
-				}			
+						span{
+													
+							line-height: 16px;							
+						}			
+					}
+				}
 			}
+		}
+
+		.section--info{
+			.dropdown.open{
+				.dropdown-menu{
+			
+					.list-info{
+						float: left;
+						width: 67%;
+
+						li{
+							width: 33%;
+						}
+					}	
+
+					a{
+						line-height: 86px !important
+					}
+				}
+			}		
+			
+		}
+
+		.txt-info{
+			display: none;
 		}
 	}
 
@@ -91,21 +125,11 @@
 					text-align: left;
 					background-position: right 19px;
 				}
-			}	
-
-			.nav--info{
-				float: left;
-				width: 67%;
-
-				li{
-					width: 33%;
-				}
-			}	
+			}				
 
 			.nav--social{
 				float: left;
 				width: auto;
-				padding-top: 15px;
 
 				li{
 					margin-left: 0;
@@ -127,6 +151,10 @@
 		width: 10%;
 		padding: 10px 0 5px 0;
 		background-color: @colorK1;
+
+		li{
+			margin-right: 0;
+		}
 	}
 
 	.list--languaje{
@@ -139,11 +167,12 @@
 		.btn{
 			display: block;
 			position: absolute;
-			top: -15px;
-			left: 3px;
+			top: 0;
+			left: 0;
 			width: 100%;
 			height: 55px;
-			padding: 10px 0 5px 0;
+			line-height: 55px;
+			padding: 0;
 		}
 
 		button:hover, abbr{
@@ -161,14 +190,24 @@
 		&.open{
 			.dropdown-menu{
 				position: absolute ;
-				top: -10px;
+				top: 0;
 				left: 0;
 				background-color: @colorK1;
 				margin: 0;
 				padding: 0;
+				width: 100%;
+
+				li{
+					text-align: center;
+				}
 
 				a{
 					height: 55px;
+					line-height: 55px !important;
+					display: inline-block;
+					padding: 0 !important;
+					text-align: center;
+					width: 100%;
 				}
 			}
 

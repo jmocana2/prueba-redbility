@@ -27,13 +27,40 @@
 		margin-top: -2px;
 	}
 
+	.dropdown-menu{
+		padding: 0;
+
+		a{
+			text-align: center;
+		}
+	}
+
 	.section{
+		.link-expand{
+			display: block;
+			text-decoration: none;
+		}
+
 		.link-expand.collapsed{
 			color: @colorK3;
+		}
+
+		.dropdown.open{
+
+			.link-expand{
+				background-color: @colorK1;
+			}
+
+			.dropdown-menu{
+				position: relative;
+			}
 		}
 	}
 
 	.box{
+
+		position: relative;
+
 		li{
 			border-bottom: none;
 			font-size: 1em;
@@ -47,7 +74,7 @@
 			display: block;
 		}		
 	}
-
+	
 	.section--who{
 
 		.link-expand{
@@ -75,7 +102,13 @@
 			&:before{
 				.shape-arrow-top (@radius: 5px, @color: @colorB, @x: 50%, @y: -4px);		
 			}
-		}		
+		}	
+
+		.dropdown.open{
+			.link-expand{
+				color: @colorB;
+			}	
+		}	
 	}
 
 	.section--what{
@@ -105,7 +138,13 @@
 			&:before{
 				.shape-arrow-top (@radius: 5px, @color: @colorO, @x: 50%, @y: -4px);		
 			}
-		}		
+		}
+
+		.dropdown.open{
+			.link-expand{
+				color: @colorO;
+			}	
+		}			
 	}
 
 	.section--how{
@@ -135,6 +174,12 @@
 			&:before{
 				.shape-arrow-top (@radius: 5px, @color: @colorG, @x: 50%, @y: -4px);		
 			}
+		}	
+
+		.dropdown.open{
+			.link-expand{
+				color: @colorG;
+			}	
 		}		
 	}
 
@@ -165,6 +210,12 @@
 			&:before{
 				.shape-arrow-top (@radius: 5px, @color: @colorY, @x: 50%, @y: -4px);		
 			}
+		}	
+
+		.dropdown.open{
+			.link-expand{
+				color: @colorY;
+			}	
 		}		
 	}
 
@@ -248,6 +299,7 @@
 .nav--languaje{
 	background-color: @colorK13;
 	padding: 18px 0;
+	position: relative;
 
 	ul{
 		width: 105px;
@@ -283,7 +335,7 @@
 
 .nav--social{
 
-	width: 255px;
+	width: 282px;
 	margin: 0 auto;
 
 	li{
