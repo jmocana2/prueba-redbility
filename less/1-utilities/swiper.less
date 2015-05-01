@@ -16,6 +16,13 @@ html, body{
   /* Fix of Webkit flickering */
   z-index: 1;
 }
+
+.swiper-container-inner{
+  height: 100vh;
+}
+
+
+
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
@@ -178,6 +185,31 @@ html, body{
   z-index: 10;
   padding: 0;
 }
+
+.swiper-pagination-inner{
+
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  z-index: 10;
+  margin-top: -5%;
+
+  .swiper-pagination-bullet{
+    border: none;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    display: block;
+    .border-radius (@radius: 8px);
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 20px; 
+
+    &:hover, &.swiper-pagination-bullet-active{
+      background-color: rgba(255,255,255,1);
+    }
+  }
+}
+
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
 }

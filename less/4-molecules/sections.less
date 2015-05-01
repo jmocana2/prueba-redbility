@@ -61,6 +61,12 @@
 	.text-intro{
 		color: @colorB;
 	}
+
+	.cont--inner_header{
+		h4, .icon{
+			color: @colorB;
+		}
+	}
 }
 
 // What section
@@ -149,3 +155,74 @@
 		color: @colorY;
 	}
 }
+
+// Inner section
+.section--inner{
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	li{
+		width: 100%;
+	}
+
+	.section--inner_header{
+		padding-top: 85px;
+		padding-left: 32px;
+	}
+
+	h3{
+		color: @colorW;
+		font-size: 0.844em;
+		text-transform: uppercase;
+		text-decoration: underline;
+		margin-bottom: 100px;
+	}
+
+	.cont--inner{
+		position: static;
+		width: 100%;				
+
+		p{
+			background-color: rgba(34,34,34,.9);
+			padding: 25px 30px;
+			font: normal .75em/1.4em @font-italic, @font-third;
+			color: @colorK4;
+		}
+
+		strong{
+			color: @colorW;
+		}
+	}
+
+	.cont--inner_header{
+		background-color: rgba(255,255,255,.9);
+		padding: 0 30px;
+		margin-bottom: 5px;
+		height: 60px;
+		line-height: 60px;
+		vertical-align: middle;
+
+		h4{
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: .9em;
+		}
+
+		.icon{
+			font-size: 1.4em;
+			position: relative;
+			top: 5px;
+			display: none;
+		}
+	}
+}
+
+
+
+// Students section
+.section--students{
+	background: url(../img/inner-section.jpg) no-repeat center 0;	
+	background-size: cover;
+		
+}	
