@@ -67,6 +67,21 @@
 		});
 	});
 
+	$( "main" ).on( "click", ".cont--inner_header a", function(e) {
+	 	e.preventDefault();
+
+	 	$(this).closest(".cont--inner").children("p").slideToggle("fast", function(){
+	 		if($(this).css("display") != "none"){
+	 			$(this).closest(".cont--inner").find("span").attr("class", "icon icon-redbility_close");
+	 		}else{
+	 			$(this).closest(".cont--inner").find("span").attr("class", "icon glyphicon glyphicon-plus");
+	 		}
+	 		
+	 	});
+	});
+
+
+
  	//resize window
  	$( window ).resize(function() {
 	  if(getWithNavigator() < 645 && mySwiper.init){
